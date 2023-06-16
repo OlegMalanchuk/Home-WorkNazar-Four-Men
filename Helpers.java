@@ -2,16 +2,28 @@ import java.util.Scanner;
 
 public class Helpers
 {
-//    public void information(){
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.print("first name : ");
-//        String data1 = scanner.nextLine();
-//        System.out.print("last name : ");
-//        String data2 = scanner.nextLine();
-//        System.out.print("foot size : ");
-//        String data3 = scanner.nextLine();
-//        System.out.println("end");
-//    }
+    public void out()
+    {
+        String line ;
+        for (int i = 0 ; i <10;i++){
+            line = "_";
+            System.out.print(line);
+        }
+        System.out.println(" ");
+
+    }
+
+    public void outQuestion()
+    {
+        System.out.println("1 - міняємо розмір ноги ");
+        System.out.println("2 - залишаємо як є ");
+
+    }
+    public void choice()
+    {
+        System.out.println("виберіть персонажа якому хочете поміняти розмір ноги. від 1 до 4 ");
+    }
+
 
 
 }
