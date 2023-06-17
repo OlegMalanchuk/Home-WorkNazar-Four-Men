@@ -1,3 +1,5 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Helpers
@@ -23,7 +25,12 @@ public class Helpers
     {
         System.out.println("виберіть персонажа якому хочете поміняти розмір ноги. від 1 до 4 ");
     }
+    public static void displayMen(HashMap<String, String> men/*<-- ось він*/) {
+        // тут ми в змінну "е" присвоюємо один елемент при кожній ітерації через ":" всі дані з "men" якого ми прийняли, витягнувши дані "men.entrySet()"
+        for (Map.Entry<String, String> e/*<-- ось вона */ : men.entrySet()) {
+            System.out.println(e.getKey() + " = " + e.getValue());
+        }
 
-
+    }
 
 }
