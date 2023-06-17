@@ -9,16 +9,8 @@ public class Main
         Cycle cycle = new Cycle();
         Register register = new Register();
 
-
-
-        men.person1();
-
-//        men.person2();
-//        men.person3();
-//        men.person4();
-
+        men.human();
         cycle.cyclyWhileTrue();
-
 
 
 
