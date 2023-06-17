@@ -1,36 +1,29 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
-public class Helpers
-{
-    public void out()
-    {
+public class Helpers {
+    public static void out() {// лінія
         String line ;
         for (int i = 0 ; i <10;i++){
             line = "_";
             System.out.print(line);
         }
         System.out.println(" ");
-
     }
 
-    public void outQuestion()
-    {
+    public static void outQuestion() {// не буду пояснював сам розберешся
         System.out.println("1 - міняємо розмір ноги ");
         System.out.println("2 - залишаємо як є ");
+    }
 
+    public static void choice() {
+        System.out.println("виберіть персонажа якому хочете поміняти розмір ноги. від 1 до 4 ");// не буду пояснював сам розберешся
     }
-    public void choice()
-    {
-        System.out.println("виберіть персонажа якому хочете поміняти розмір ноги. від 1 до 4 ");
-    }
-    public static void displayMen(HashMap<String, String> men/*<-- ось він*/) {
-        // тут ми в змінну "е" присвоюємо один елемент при кожній ітерації через ":" всі дані з "men" якого ми прийняли, витягнувши дані "men.entrySet()"
-        for (Map.Entry<String, String> e/*<-- ось вона */ : men.entrySet()) {
-            System.out.println(e.getKey() + " = " + e.getValue());
+    public static void displayMen(HashMap<String, String> men) {// короче ця штука приймає ключ-значення чоловіка n якого ми вкажемо і виведе всю інфу про нього
+
+        for (Map.Entry<String, String> e : men.entrySet()) {// цикл forech який виводить всю інфу про користувача
+            //ми тут присвоюємо значенню е змінну men і виводимо на екран
+            System.out.println(e.getKey() + " = " + e.getValue());// getKey()-ключ , e.getValue()-значення яке заховано за ключем
         }
-
     }
-
 }
