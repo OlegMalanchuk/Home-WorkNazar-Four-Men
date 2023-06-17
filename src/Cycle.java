@@ -7,66 +7,57 @@ public class Cycle extends Register
     public  void  cyclyWhileTrue()
     {
 
-     while (true)
-    {
-        Scanner question = new Scanner(System.in);
-        Helpers helpers = new Helpers();
+     while (true) {
+         Scanner question = new Scanner(System.in);
+         Helpers helpers = new Helpers();
+         Register register =new Register();
+         Men men = new Men();
 
-        helpers.outQuestion();
-        int num= question.nextInt();
-
-        if (num == 1 ){
-            helpers.choice();
-            Scanner choicePerson = new Scanner(System.in);
-            int numPerson = choicePerson.nextInt();
-
-            if (numPerson ==1)
-            {
-                Scanner menChoice = new Scanner(System.in);
-
-                HashMap<String, String> men1 = new HashMap<>();
-                System.out.print("foot size : ");
-                Integer reElected = Integer.valueOf(menChoice.nextLine());
-                men1.put("footSize", String.valueOf(reElected));
-
-                for (Map.Entry<String,String>e: men1.entrySet()){
-                    System.out.println(e.getKey() +" = "+ e.getValue());
-                }
+         helpers.outQuestion();
+         int num = question.nextInt();
 
 
-            }
-//            if (numPerson ==2)
-//            {
-//
-//            }
-//            if (numPerson ==3)
-//            {
-//
-//            }
-//            if (numPerson ==4)
-//            {
-//
-//            }
-        }
-        if (num == 2){
-        Register register = new Register();
-
-            HashMap<Object, Object> men1 =new HashMap<>();
-            for (Map.Entry<Object, Object> e: men1.entrySet()){
-                // виводимо ключ і значення, розділяючи їх знаком рівності
-                System.out.println(e.getKey() +" = "+ e.getValue());
-            }
+         if (num == 1) {
+             helpers.choice();
+             Scanner choicePerson1 = new Scanner(System.in);
+             int numPerson ;
+             numPerson = choicePerson1.nextInt();
+             if (numPerson == 1) {
+                 System.out.print("введіть розмір першого: ");
+                 String foot = question.next();
+                 men.setFootMen1(foot);
 
 
+             }
+             if (numPerson == 2 ){
+                 System.out.print("введіть розмір другого: ");
+                 String foot = question.next();
+                 men.setFootMen2(foot);
+             }
+             if (numPerson == 3 ){
+                 System.out.print("введіть розмір третьго: ");
+                 String foot = question.next();
+                 men.setFootMen3(foot);
+
+             }
+             if (numPerson == 4 ){
+                 System.out.print("введіть розмір четвертого: ");
+                 String foot = question.next();
+                 men.setFootMen4(foot);
+             }
+         }
+         if (num == 2) {
+           Helpers.displayMen(men.getMen1());
+           Helpers.displayMen(men.getMen2());
+           Helpers.displayMen(men.getMen3());
+           Helpers.displayMen(men.getMen4());
 
 
-            System.err.println("dfdfdfdfddddddf__________________________________________________________________________");
-            System.err.println("dfdfdfdfddddddf__________________________________________________________________________");
-            System.err.println("dfdfdfdfddddddf__________________________________________________________________________");
-            System.err.println("dfdfdfdfddddddf__________________________________________________________________________");
+             System.out.println("  r   ");
 
-        }
-    }
+
+         }
+     }
     }
 
 
