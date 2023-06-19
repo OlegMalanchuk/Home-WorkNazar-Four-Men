@@ -91,16 +91,16 @@ public class Cycle extends Meens
                      break;
              }
          } else if (num == 4) {//якщо ви вибрали це тут виводиться інфа про всіх учасників
-             Helpers.displayMen(men.getMen1());// класна штука через те що метод в хелпері статичний мим можемо його викликати без
-             // ініціалізації цілого класу, а він ту виконує дію яку я розписав в хелпері
-             //коротко записуєш значення чоловіка якого ти хочеш вивести іт циклом воно тобі виводить всю інфу
-             Helpers.out();//хелпер
-             Helpers.displayMen(men.getMen2());
-             Helpers.out();
-             Helpers.displayMen(men.getMen3());
-             Helpers.out();
-             Helpers.displayMen(men.getMen4());
-             Helpers.out();
+//             Helpers.displayMen(men.getMen1());// класна штука через те що метод в хелпері статичний мим можемо його викликати без
+//             // ініціалізації цілого класу, а він ту виконує дію яку я розписав в хелпері
+//             //коротко записуєш значення чоловіка якого ти хочеш вивести іт циклом воно тобі виводить всю інфу
+//             Helpers.out();//хелпер
+//             Helpers.displayMen(men.getMen2());
+//             Helpers.out();
+//             Helpers.displayMen(men.getMen3());
+//             Helpers.out();
+//             Helpers.displayMen(men.getMen4());
+//             Helpers.out();
             Meens meens = new Meens();
              Helpers.displayMens(meens.getMens());
 
