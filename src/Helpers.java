@@ -4,7 +4,7 @@ import java.util.Map;
 public class Helpers {
     public static void out() {// лінія
         String line ;
-        for (int i = 0 ; i <10;i++){
+        for (int i = 0 ; i <50;i++){
             line = "_";
             System.out.print(line);
         }
@@ -27,6 +27,15 @@ public class Helpers {
         System.out.println("виберіть персонажа якому хочете поміняти прізвище. від 1 до 4 ");// не буду пояснював сам розберешся
     }
 
+    public static void displayMens(HashMap<String, HashMap<String,String>> mens) {// короче ця штука приймає ключ-значення чоловіка n якого ми вкажемо і виведе всю інфу про нього
+
+        for (Map.Entry<String, HashMap<String,String>> e : mens.entrySet()) {// цикл forech який виводить всю інфу про користувача
+            //ми тут присвоюємо значенню е змінну mens і виводимо на екран
+            System.out.println(e.getKey() + " = " + e.getValue());// getKey()-ключ , e.getValue()-значення яке заховано за ключем, але e.getValue()
+            // виступає не словом а іншим хесмепом в якому є більше інфи про користувача
+        }
+    }
+
 //    public static void displayMen(HashMap<String, String> men) {// короче ця штука приймає ключ-значення чоловіка n якого ми вкажемо і виведе всю інфу про нього
 //
 //        for (Map.Entry<String, String> e : men.entrySet()) {// цикл forech який виводить всю інфу про користувача
@@ -34,16 +43,6 @@ public class Helpers {
 //            System.out.println(e.getKey() + " = " + e.getValue());// getKey()-ключ , e.getValue()-значення яке заховано за ключем
 //        }
 //    }
-
-    public static void displayMens(HashMap<String, HashMap<String,String>> mens) {// короче ця штука приймає ключ-значення чоловіка n якого ми вкажемо і виведе всю інфу про нього
-
-        for (Map.Entry<String, HashMap<String,String>> e : mens.entrySet()) {// цикл forech який виводить всю інфу про користувача
-            //ми тут присвоюємо значенню е змінну men і виводимо на екран
-            System.out.println(e.getKey() + " = " + e.getValue());// getKey()-ключ , e.getValue()-значення яке заховано за ключем
-        }
-    }
-
-
 
 
 

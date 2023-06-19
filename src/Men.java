@@ -6,7 +6,7 @@ public class Men
 
 
 
-    private static HashMap <String , String> men1;// це метод ключ-значення ніби
+    private static HashMap <String , String> men1;// це метод ключ-значення ніби зробив статичними що б не викликати цей клас в класі цикл
     private static HashMap <String , String> men2;// це метод ключ-значення ніби
     private static HashMap <String , String> men3;// це метод ключ-значення ніби
     private static HashMap <String , String> men4;// це метод ключ-значення ніби
@@ -47,12 +47,12 @@ public class Men
     public void setFootMen3(String foot) {this.men3.put("footSize", foot);} // сетери які використовуються для зміни розміру пенсіла )
     public void setFootMen4(String foot) {this.men4.put("footSize", foot);} // сетери які використовуються для зміни розміру пенсіла )
 
-    public void setNameMen1(String name) {this.men1.put("firstName", name);}
+    public void setNameMen1(String name) {this.men1.put("firstName", name);}// додав сетер для зміни ніку
     public void setNameMen2(String name) {this.men2.put("firstName", name);}
     public void setNameMen3(String name) {this.men3.put("firstName", name);}
     public void setNameMen4(String name) {this.men4.put("firstName", name);}
 
-    public void setLastNameMen1(String LastName) {this.men1.put("lastName", LastName);}
+    public void setLastNameMen1(String LastName) {this.men1.put("lastName", LastName);}// додав серер для зміни ласт ніку
     public void setLastNameMen2(String LastName) {this.men1.put("lastName", LastName);}
     public void setLastNameMen3(String LastName) {this.men1.put("lastName", LastName);}
     public void setLastNameMen4(String LastName) {this.men1.put("lastName", LastName);}
